@@ -1,0 +1,391 @@
+@charset 'UTF-8';
+body{
+    color: #a8a8a8;
+	background-color:#0a0a0a; 
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body h1 a,
+body h2 a,
+body h3 a,
+body h4 a,
+body h5 a,
+body h6 a {
+    color: #fff;
+}
+body *{
+	border-color: #ffffff1a !important;
+}
+.aminities-thumb{
+	outline-color: #ffffff1a !important;
+}
+.chr-price,
+.chr-contact-thumb i,
+.sticky-header.affix .navigation ul li a,
+.widget_rss ul li, 
+.widget_meta ul li, 
+.widget_pages ul li, 
+.widget_archive ul li, 
+.widget_nav_menu ul li, 
+.widget_categories ul li, 
+.widget_recent_comments ul li, 
+.widget_recent_entries ul li, 
+.widget_rss ul li a, 
+.widget_meta ul li a, 
+.widget_pages ul li a, 
+.widget_archive ul li a, 
+.widget_nav_menu ul li a, 
+.widget_categories ul li a, 
+.widget_recent_comments ul li a, 
+.widget_recent_entries ul li a ,
+body a{
+	color: #787878;
+}
+.chr-btn{
+	color:#979797;
+}
+.chr-btn:hover,
+.xdsoft_datetimepicker .xdsoft_calendar td, .xdsoft_datetimepicker .xdsoft_calendar th,
+.xdsoft_datetimepicker{
+	color: #fff;
+}
+.chr-blog-small{
+	background-color: transparent;
+	border: 1px solid; 
+}
+ul.options,
+.xdsoft_datetimepicker,
+.room-list-view,
+.special-room,
+blockquote,
+.chr-login,
+.chr-contact-thumb,
+#loader-overflow,
+.xdsoft_datetimepicker .xdsoft_label,
+.xdsoft_datetimepicker .xdsoft_label > .xdsoft_select,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div,
+.xdsoft_datetimepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option,
+.xdsoft_datetimepicker .xdsoft_calendar td, .xdsoft_datetimepicker .xdsoft_calendar th,
+.gray-bg{
+	background: /*#f7f4f1*/#3a3a3a;
+}
+
+.booking-form,
+.chr-about-wrap,
+.main-services-tab li a,
+/* .chr-staff-thumb, */
+.price-table .text,
+.sticky-header.affix,
+.navigation .sub-menu,
+.navigation .children,
+.navigation ul li ul a,
+.brnd-slider .thumb:hover,
+.services-bg .chr-about-wrap,
+.navigation ul li .sub-menu a,
+.navigation ul li .children a,
+.brnd-slider .slick-center .thumb,
+.chr-login .input-field input[type="text"],
+.safari .navigation ul li .safari-children,
+.gray-bg .contact-form .input-field textarea,
+.chr-login .input-field input[type="password"],
+.chr-login .input-field input[type="submit"]:hover,
+.gray-bg .contact-form .input-field input[type="text"],
+.gray-bg .contact-form .input-field input[type="email"],
+.gray-bg .contact-form .input-field input[type="submit"]:hover
+/* .aminities-thumb */{
+	background-color:#0a0a0a; 
+}
+.brnd-slider .thumb img,
+.xdsoft_datetimepicker .xdsoft_label i, .xdsoft_datetimepicker .xdsoft_next, .xdsoft_datetimepicker .xdsoft_prev, .xdsoft_datetimepicker .xdsoft_today_button{
+    -webkit-filter: invert(100%);
+        filter: invert(100%);
+}
+.osr-copyright {
+	background-color:transparent !important; 
+}
+
+/*
+	  ============================================================
+		   Font Color
+	  ============================================================
+*/
+.th-cl,
+.time i,
+.tweet_list li a:hover,
+textarea:focus,
+.page-navigation a:hover,
+.weather-inner i,
+.menu-list:hover .title a,
+.arrows .slick-arrow:before,
+.chr-services:hover .title a,
+.input-field input:focus,
+.error-page .chr-btn:hover,
+.header-1 .chr-top-info i,
+.event-small .blog-meta li a i,
+.readmore-btn:hover,
+.title a:hover,
+.breadcrumb > li.active a,
+.breadcrumb > li.active ,
+.blog-meta li a:hover,
+.chr-blog-1:hover .title a,
+.testimonial-thumb .title a,
+.footer-1 address:before,
+/*.fancy-btn:hover,*/
+.chr-price-thumb h6,
+.comment-reply-link:before,
+.comment-reply-link:hover,
+.widget-event-info .title i,
+.chr-blog-small:hover .title a,
+.room-list-view:hover .title a,
+.port-filter li .filter.active,
+.port-filter li .filter:hover,
+.widget-event-thumb .blog-meta li a i,
+.chr-staff-thumb figure .chr-social li a:hover,
+.widget-info .flex-text a:hover,
+.widget-search .input-field .search_icon:before,
+.chr-room-thumb:hover .title a,
+/*HOTEL*/
+.news-letter input[type="email"]:focus .search_icon:before,
+.news-letter .input-field input[type="text"]:focus label::before,
+.news-letter .input-field input[type="text"]:focus label:hover::before,
+.hotel-footer .about-text a:hover,
+.header-1 .navigation ul li:hover > a,
+.header-1 .navigation ul li.active > a,
+.header-1.absolute .navigation ul li:hover > a,
+.header-1.absolute .navigation ul li.active > a
+{
+
+	color: #c19b76;
+
+}
+
+
+
+/*
+	  ============================================================
+		   Background Color
+	  ============================================================
+*/
+.th-bg,
+.tweet_list li i,
+.ocr-button.hv-th-bg:hover,
+.chr-btn.th-bg,
+.price-tag:hover,
+.room-list-view figure,
+.menu-list figure:before,
+.price-table:hover .title,
+.chr-spa-thumb:hover > span,
+.chr-staff-thumb figure:before,
+.chr-room-thumb:hover .price-tag,
+.chr-pagination .page-numbers.current,
+.chr-pagination .page-numbers:hover,
+.chr-social li a:hover,
+.chr-blog-1:hover .date-box,
+.gallary-thumb figure:before,
+.headind-1 .title:after,
+.arrows .slick-arrow:hover,
+.dot-style-1 li.slick-active button,
+.chr-blog-small figure:before,
+.widget_categories li:hover,
+.widget_archive li:hover,
+.comingsoon-page-2,
+.chr-contact-thumb:hover,
+.booking-form .input-field .chr-btn:hover,
+.chr-blog-small:hover figure .s-date-box,
+.headind-1 .title:before,.chr-sr-list li:before,
+.header-1 .navigation ul li.active > a:after,
+.header-1 .navigation ul li.active > a:before,
+.header-1 .navigation ul li:hover > a:after,
+.header-1 .navigation ul li:hover > a:before,
+/**/
+.options li:hover,
+.widget-title span:before,
+.widget-title span:after,
+.main-services-tab li.active a:hover,
+.main-services-tab li.active a,
+.main-services-tab li:hover a,
+.aminities-thumb:hover,
+.dl-menuwrapper button,
+.dl-menuwrapper li a:hover,
+.navigation ul li .children li:hover > a,
+.chr-btn:hover
+{
+	background-color:#c19b76;
+}
+.chr-about-wrap figure{
+	outline-color: #c19b76!important;
+}
+
+/*
+	  ============================================================
+		   Border Color
+	  ============================================================
+*/
+.tweet_list li a,
+.ocr-button.hv-th-bg:hover,
+.chr-btn .th-bd,
+.th-bd,
+.fancy-btn,
+.tweet_list li a,
+.styledselect.active,
+.input-field .options,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+.arrows .slick-arrow:hover,
+.brnd-slider .thumb:hover,
+.brnd-slider .slick-center .thumb,
+.booking-form .input-field .chr-btn:hover,
+.room-detail-slider .slider-nav figure:before,
+.chr-pagination .page-numbers.current,
+.chr-pagination .page-numbers:hover,
+.chr-social li a:hover,
+.fancy-btn:before, 
+.chr-contact-thumb i,
+.fancy-btn:after,
+.main-services-tab li.active a:before,
+.main-services-tab li:hover a:before,
+.hotel-testimonial-thumb .text,
+.hotel-testimonial-thumb .text:before,
+.chr-pagination .page-numbers
+{
+	border-color:#c19b76;	
+}
+
+/*
+	  ============================================================
+		   Transaction Effect
+	  ============================================================
+*/
+select,
+input,
+textarea,
+.chr-btn,
+.p-middel,
+.chr-room,
+.zoom-icon,
+.price-table,
+.blog-meta *,
+.zoom-icon a,
+.styledselect,
+.readmore-btn,
+.chr-blog-1 *,
+.page-numbers,
+.chr-btn:after,
+.chr-blog-small,
+.room-list-view,
+.chr-btn:before,
+.chr-room-thumb,
+.chr-social li a,
+.chr-blog-small *,
+.chr-contact-thumb,
+.comment-reply-link,
+.price-table .title,
+.chr-contact-thumb *,
+.styledselect .options,
+.chr-spa-thumb,
+.chr-spa-thumb > span,
+.room-list-view figure img,
+.widget_rss ul li,
+.widget_meta ul li,
+.widget_pages ul li,
+.widget_archive ul li,
+.widget_nav_menu ul li,
+.widget_categories ul li,
+.widget_recent_comments ul li,
+.widget_recent_entries ul li,
+.widget_rss ul li a,
+.widget_meta ul li a,
+.widget_pages ul li a,
+.widget_archive ul li a,
+.widget_nav_menu ul li a,
+.widget_categories ul li a,
+.widget_recent_comments ul li a,
+.widget_recent_entries ul li a,
+.widget_rss ul li,
+.widget_meta ul li,
+.widget_pages ul li,
+.widget_archive ul li,
+.widget_nav_menu ul li,
+.widget_categories ul li,
+.widget_recent_comments ul li,
+.widget_recent_entries ul li,
+.widget_rss ul li a:before,
+.widget_meta ul li a:before,
+.widget_pages ul li a:before,
+.widget_archive ul li a:before,
+.widget_nav_menu ul li a:before,
+.widget_categories ul li a:before,
+.widget_recent_comments ul li a:before,
+.widget_recent_entries ul li a:before,
+.room-detail-slider .slider-nav figure:before,
+.price-tag,
+.tagcloud a,
+.about-text a,
+.aminities-thumb,
+.tweet_list li a,
+.options li,
+.chr-staff-thumb,
+.brnd-slider .thumb,
+.brnd-slider .thumb img,
+.port-filter li .filter,
+.page-navigation a,
+.navigation ul li a,
+.aminities-thumb h6,
+.dl-menuwrapper button,
+.main-services-tab li a,
+.main-services-tab li a:before,
+.navigation ul li a:before,
+.navigation ul li a:after,
+.menu-list figure:before,
+.chr-staff-thumb figure img,
+.widget-info .flex-text a,
+.gallary-thumb figure:before,
+.chr-staff-thumb figure:after,
+.chr-staff-thumb figure:before,
+.chr-blog-small figure:before,
+.fancy-btn:before, .fancy-btn:after,
+.dot-style-1 li button,
+.arrows .slick-arrow:before,
+.arrows .slick-arrow,
+.dl-menuwrapper li a,
+.navigation ul li ul,
+.navigation .sub-menu,
+.navigation .children,
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a
+{
+	transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+	-ms-transition:all 0.3s ease-in-out;
+	-o-transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;	
+}
+/*
+	  ============================================================
+		  Content Selection
+	  ============================================================
+*/
+::selection {
+    background: #c19b76;
+    color:#ffffff;
+}
+::-webkit-selection {
+    background: #c19b76;
+    color: #ffffff;
+}
+::-moz-selection {
+    background: #c19b76;
+    color: #ffffff;
+}
+
+
+
+
+
+
+

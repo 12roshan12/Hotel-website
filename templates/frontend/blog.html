@@ -1,0 +1,19 @@
+{% load static %}
+
+{% for items in data %}
+
+
+
+<div>
+    
+    <h1>
+       {{ items.title }}
+    </h1>
+
+    <p>{{ items.description }}</p>
+    <div> <img src=  "{{ items.image.url  }}" ></div>
+    <p>{{ items.added_by }}</p>
+
+    
+</div>
+{% endfor %}

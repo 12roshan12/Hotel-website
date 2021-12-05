@@ -1,0 +1,90 @@
+{% extends 'frontend/layouts/master.html' %} {% load static %} 
+{% block content %}
+
+<div class="main-contant">
+  <!--Blog Section Start-->
+  <section>
+    <h3 style="color: red">{{msg}}</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-4 col-md-4">
+          <form class="chr-login" method="POST">
+            {% csrf_token %}
+            <!--Heading 1 Start-->
+            <div class="headind-1">
+              <h3 class="title">Create account</h3>
+            </div>
+            <!--Heading 1 End-->
+            <!-- <div class="input-field">
+                                <label>First Name</label>
+                                <input type="text" placeholder="First Name" name="fname">
+                            </div>
+                            <div class="input-field">
+                                <label>Last Name</label>
+                                <input type="text" placeholder="Last Name" name="lname">
+                            </div>
+                            <div class="input-field">
+                                <label>Email</label>
+                                <input type="email" placeholder="Email" name="email">
+                            </div>
+                            <div class="input-field">
+                                <label>password</label>
+                                <input type="password" placeholder="********" maxlength="8" name="password">
+                            </div>
+                            <div class="input-field">
+                                <label>Confirm Password</label>
+                                <input type="password" placeholder="********" maxlength="8" name="cpassword">
+                            </div>
+                            <div class="input-field">
+                                <label>Your Mobile</label>
+                                <input type="text" placeholder="+92-000-0000000" maxlength="15" name="mobile">
+                            </div>
+                            <div class="input-field">
+                                <input type="submit" value="Create Account">
+                            </div> -->
+            <!-- Form starts-->
+            {% for field in form.visible_fields|slice:5 %}
+
+            <div class="row form-group">
+              <div class="col-md-12 mb-3 mb-md-0">
+                <!-- <label class="font-weight-bold" for="firstname">{{ field.label }}</label> -->
+
+                <input
+                  type="{{ field.field.widget.input_type }}"
+                  name="{{ field.html_name }}"
+                  class="form-control"
+                  placeholder="{{ field.label }}"
+                />
+              </div>
+            </div>
+
+            {% endfor %}
+
+            <div class="row form-group">
+              <div class="col-md-12 mb-3 mb-md-0">
+                  <label class="font-weight-bold" for="firstname">{{ form.user_types.label }}</label>
+                  <div class="col-md-12 mb-3 mb-md-0">
+                      <!-- <label for="option-job-type-1">
+                          {{ form.user_types }}
+                      </label> -->
+                      <input style="display: none;" type="radio" name="user_types" required value="is_buyer" checked/>
+                  </div>
+              </div>
+          </div>
+            <input type="submit" value="submit" />
+
+            <div>
+              Already Account ?
+              <a class="readmore-btn" href="/login/">Log in</a>
+            </div>
+          </form>
+
+          <!--  Form ends-->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Blog Section End-->
+</div>
+
+{% endblock %}

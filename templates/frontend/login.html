@@ -1,0 +1,93 @@
+{% extends 'frontend/layouts/master.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="main-contant">
+        <!--Blog Section Start-->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-4 col-md-4">
+                        <!--Login Form Start-->
+                        <!-- <form class="chr-login">
+                            Heading 1 Start-->
+                            <!-- <div class="headind-1">
+                                <h3 class="title">Log In</h3>
+                            </div> -->
+                            <!--Heading 1 End-->
+                            <!-- <div class="input-field">
+                                <label>User Name</label>
+                                <input type="text" placeholder="User Name" >
+                            </div>
+                            <div class="input-field">
+                                <label>password</label>
+                                <input type="password" placeholder="********" maxlength="8">
+                            </div>
+                            <div class="input-field">
+                                <input type="submit" value="Hit Enter">
+                            </div>
+                            <a class="readmore-btn" href="#">Forgot Password ?</a>
+                        </form>  -->
+                        <!--Login Form End-->
+                        {% if not user.is_authenticated %}
+
+                        <form action="#" class="p-5 bg-white" method="post">
+                            {% csrf_token %}
+
+                            {% for field in form.visible_fields %}
+                                <div class="row form-group">
+                                    <div class="col-md-12 mb-3 mb-md-0">
+                                        <label class="font-weight-bold"
+                                               for="firstname">{{ field.label }}</label>
+                                        <input type="{{ field.field.widget.input_type }}" id="firstname"
+                                               name="{{ field.html_name }}" class="form-control"
+                                               placeholder="{{ field.label }}">
+                                    </div>
+                                </div>
+                            {% endfor %}
+                            <div class="row form-group">
+                                <div class="col-md-12 mb-3 mb-md-0">
+                                    <input class="btn btn-primary" type="submit" value="Login">
+                                </div>
+                            </div>
+
+                        </form>
+
+                        {% if form.errors %}
+                        <div class="p-4 mb-3 bg-white">
+                            <div class="alert alert-danger alert-dismissible" role="alert">
+                                <div id="form_errors">
+                                    {% for key, value in form.errors.items %}
+                                        <span class="fieldWrapper ">
+                            {{ value }}
+                        </span>
+                                    {% endfor %}
+                                </div>
+                                <button type="button" class="close" data-dissmiss="alert"
+                                        aria-hidden="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        </div> 
+                    {% endif %}
+                </div>
+
+            </div>
+        {% else %}
+
+            <div class="card bg-light-primary">
+                <h2 class="text-center text-danger">Already Logged In</h2>
+                <a class="btn btn-success mt-4" href="/"> Go To Home Page</a>
+            </div> 
+
+        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Blog Section End-->
+    </div>
+
+
+{% endblock %}

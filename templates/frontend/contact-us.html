@@ -1,0 +1,143 @@
+{% extends 'frontend/layouts/master.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="main-contant">
+        <div class="chr-map">
+            <div id="map-canvas"></div>
+        </div>
+        <!--Contact Us Section Start-->
+        <section class="chr-contact-wrap">
+            <div class="container">
+                <!--Contact Wrap Start-->
+                <div class="row">
+                    <!--Contact Thumb Start-->
+                    <div class="col-md-4 col-sm-4">
+                        <div class="chr-contact-thumb">
+                            <i class="fa fa-map-marker"></i>
+                            <h5 class="title">Address</h5>
+                            <p>Gulberg 3 , Walton Road , Usa</p>
+                        </div>
+                    </div>
+                    <!--Contact Wrap End-->
+                    <!--Contact Thumb Start-->
+                    <div class="col-md-4 col-sm-4">
+                        <div class="chr-contact-thumb">
+                            <i class="fa fa-phone"></i>
+                            <h5 class="title">Phone</h5>
+                            <p>+1 - 99 - 1234567</p>
+                        </div>
+                    </div>
+                    <!--Contact Wrap End-->
+                    <!--Contact Thumb Start-->
+                    <div class="col-md-4 col-sm-4">
+                        <div class="chr-contact-thumb">
+                            <i class="fa fa-envelope"></i>
+                            <h5 class="title">Email</h5>
+                            <p>info@themes.com</p>
+                        </div>
+                    </div>
+                    <!--Contact Wrap End-->
+                </div>
+                <!--Contact Wrap End-->
+            </div>
+        </section>
+        <!--Contact Us Section End-->
+        <section class="gray-bg">
+            <div class="container">
+                <div class="contact-form">
+                    <!--Heading 1 Start-->
+                    <div class="headind-1 text-center">
+                        <h3 class="title">Get In Touch</h3>
+                    </div>
+                    <!--Heading 1 End-->
+                    <form id=""  method="post">
+                        <!--Divider Start-->
+                        {% csrf_token %}
+                        
+                        <div class="input-divider row">
+                            <div class="col-md-4 col-sm-4">
+                                <!--Input Field Start-->
+                                <div class="input-field">
+                                    <!-- <input type="text" value="" data-msg-required="Please enter your name"
+                                           maxlength="100" class="form-control " name="name" id="name"
+                                           placeholder="Your Name" required> -->
+                                           <input type="text"
+                                           value="name" id="name"
+                                           name="name" class="form-control"
+                                           placeholder="name">
+
+                                           <!-- {{form.name.field.widget.input_type}} -->
+                                </div>
+                                <!--Input Field End-->
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <!--Input Field Start-->
+                                <div class="input-field">
+                                    <input type="text" rows="1"
+                                           value="email" id="email"
+                                           name="email" class="form-control"
+                                           placeholder="email"/>
+
+                                </div>
+                                <!--Input Field End-->
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <!--Input Field Start-->
+                                <div class="input-field">
+                                    <input type="text"
+                                           value="number" id="number"
+                                           name="number" class="form-control"
+                                           placeholder="number">
+
+                                </div>
+                                <!--Input Field End-->
+                            </div>
+                        </div>
+                        <!--Divider End-->
+                        <!--Input Field Start-->
+                        <div class="input-field">
+                            <!-- <textarea maxlength="5000" data-msg-required="Please enter your message" rows="4"
+                                      class="form-control " name="message" id="message" placeholder="Your Message"
+                                      required></textarea> -->
+                                      <textarea type="text"
+                                           value="message" id="message"
+                                           name="message" class="form-control"
+                                           placeholder="message"
+                                           rows="4" maxlength="5000"></textarea>
+
+                        </div>
+                        <!--Input Field End-->
+                        <!--Input Field Start-->
+                        <div class="input-field text-center">
+                            <input type="submit" value="SEND MESSAGE"
+                                   class="button medium rounded gray font-open-sans mt-40"
+                                   data-loading-text="Loading...">
+                        </div>
+                        <!--Input Field End-->
+                        <div class="alert alert-success hidden animated pulse" id="contactSuccess">
+                            Thanks, your message has been sent to us.
+                        </div>
+                        <div class="alert alert-danger hidden animated shake" id="contactError">
+                            <strong>Error!</strong> There was an error sending your message.
+                        </div>
+                    </form>
+
+                    <!-- <div>
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        <input type="text" name="name" placeholder="name">
+                        <input type="text" name="email" placeholder="name">
+                        <input type="text" name="number" placeholder="name">
+                        <input type="text" name="message" placeholder="name">
+                        <input type="submit" value="submit">
+
+                    </form> 
+                </div> -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+{% endblock %}

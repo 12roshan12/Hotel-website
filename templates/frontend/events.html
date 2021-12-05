@@ -1,0 +1,8 @@
+<div>
+    {% for items in data %}
+    <h1> {{ items.title }}</h1>
+    <p> {{ items.description }}</p>
+    <p> events started at {{ items.start_date }} and ended at {{ items.end_date }}</p>
+    <p> event added by {{ items.added_by }}</p>
+    {% endfor %}
+</div>

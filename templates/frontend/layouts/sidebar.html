@@ -1,0 +1,168 @@
+{% load static %}
+
+<div class="chr_banner banner-hotel">
+    <ul class="slider arrows">
+        <li class="">
+            <!--Banner Thumb START-->
+            <div>
+                <img src="{% static 'frontend/extra-images/banner-01.jpg' %}" alt="Image here">
+                <div class="chr-caption-wrapper">
+                    <div class="chr_banner_caption container">
+                        <div class="chr-caption">
+                            <h6 data-animation="fadeInUp" data-delay="0.3s" class="chr-caption-title">Come To Us</h6>
+                            <h6 data-animation="fadeInUp" data-delay="0.5s" class="chr-caption-text">Home Away From
+                                Home</h6>
+                            <p data-animation="fadeInUp" data-delay="1s" class="chr-caption-contant">
+                                Book a room at our Hotel now and get a discount of 30%. Fruit basket, soft drinks and
+                                cozy bed are waiting for you. We will do everything to make you feel at home.
+                            </p>
+                            <a href="blog-detail.html" data-animation="fadeInLeft" data-delay="1.3s"
+                               class="chr-btn fancy-btn">Explore Us</a>
+                            <a href="#" data-animation="fadeInRight" data-delay="1.3s" class="chr-btn fancy-btn">Bok
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Banner Thumb End-->
+        </li>
+        <li class="">
+            <!--Banner Thumb START-->
+            <div>
+                <img src="{% static 'frontend/extra-images/banner-02.jpg' %}" alt="Image here">
+                <div class="chr-caption-wrapper">
+                    <div class="chr_banner_caption container">
+                        <div class="chr-caption">
+                            <h6 data-animation="fadeInUp" data-delay="0.3s" class="chr-caption-title">Come To Us</h6>
+                            <h6 data-animation="fadeInUp" data-delay="0.5s" class="chr-caption-text">Home Away From
+                                Home</h6>
+                            <p data-animation="fadeInUp" data-delay="1s" class="chr-caption-contant">
+                                Book a room at our Hotel now and get a discount of 30%. Fruit basket, soft drinks and
+                                cozy bed are waiting for you. We will do everything to make you feel at home.
+                            </p>
+                            <a href="blog-detail.html" data-animation="fadeInLeft" data-delay="1.3s"
+                               class="chr-btn fancy-btn">Explore Us</a>
+                            <a href="#" data-animation="fadeInRight" data-delay="1.3s" class="chr-btn fancy-btn">Bok
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Banner Thumb End-->
+        </li>
+        <li class="">
+            <!--Banner Thumb START-->
+            <div>
+                <img src="{% static 'frontend/extra-images/banner-03.jpg' %}" alt="Image here">
+                <div class="chr-caption-wrapper">
+                    <div class="chr_banner_caption container">
+                        <div class="chr-caption">
+                            <h6 data-animation="fadeInUp" data-delay="0.3s" class="chr-caption-title">Come To Us</h6>
+                            <h6 data-animation="fadeInUp" data-delay="0.5s" class="chr-caption-text">Home Away From
+                                Home</h6>
+                            <p data-animation="fadeInUp" data-delay="1s" class="chr-caption-contant">
+                                Book a room at our Hotel now and get a discount of 30%. Fruit basket, soft drinks and
+                                cozy bed are waiting for you. We will do everything to make you feel at home.
+                            </p>
+                            <a href="blog-detail.html" data-animation="fadeInLeft" data-delay="1.3s"
+                               class="chr-btn fancy-btn">Explore Us</a>
+                            <a href="#" data-animation="fadeInRight" data-delay="1.3s" class="chr-btn fancy-btn">Bok
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Banner Thumb End-->
+        </li>
+    </ul>
+    <!--Widget Booking Start-->
+    <div class="widget widget-booking">
+        <div class="booking-form">
+            <!--Title Start-->
+            <h3 class="title th-bd">Room Booking</h3>
+            <!--Title End-->
+            <form>
+                <div class="row">
+                    <div class="col-md-12">
+                        <!--Input Field Start-->
+                        <div class="input-field">
+                            <input type="text" placeholder="Your Name">
+                        </div>
+                        <!--Input Field End-->
+                    </div>
+                    <div class="col-md-6">
+                        <!--Input Field Start-->
+                        <div class="input-field">
+                            <div class="rq-check-inout-wrapper rq-check-in-wrapper" id="rq-check-in-single">
+                                <div class="rq-check-inout-single-wrapper">
+                                    <span class="rq-single-date">24</span>
+                                    <span class="rq-month-year">
+                                                    <span class="rq-single-month"></span>
+                                                </span>
+                                    <input type="hidden" name="date_in"/>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Input Field End-->
+                    </div>
+                    <div class="col-md-6">
+                        <!--Input Field Start-->
+                        <div class="input-field">
+                            <div class="rq-check-inout-wrapper rq-check-in-wrapper" id="rq-check-out-single">
+                                <div class="rq-check-inout-single-wrapper">
+                                    <span class="rq-single-date">24</span>
+                                    <span class="rq-month-year">
+                                                    <span class="rq-single-month">Sep</span>
+                                                </span>
+                                    <input type="hidden" name="date_out"/>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Input Field End-->
+                    </div>
+                    <div class="col-md-6">
+                        <!--Input Field Start-->
+                        <div class="input-field">
+                            <!-- TIME WRAP START-->
+                            <div title="check in" class="time_picker">
+                                <input id="rq-check-in-time" class="timepicker" placeholder="Time" name="time_in"/>
+                            </div>
+                            <!--TIME WRAP END-->
+                        </div>
+                        <!--Input Field End-->
+                    </div>
+                    <div class="col-md-6">
+                        <!--Input Field Start-->
+                        <div class="input-field">
+                            <!-- TIME WRAP START-->
+                            <div title="check out" class="time_picker">
+                                <input id="rq-check-out-time" class="timepicker" placeholder="Time" name="time_out"/>
+                            </div>
+                            <!--TIME WRAP END-->
+                        </div>
+                        <!--Input Field End-->
+                    </div>
+                    <div class="col-md-12">
+                        <!--Input Field Start-->
+                        <div class="input-field">
+                            <select>
+                                <option value="">1 Adult 1 Room</option>
+                                <option value="aye">3 Adult 1 Room</option>
+                                <option value="eh">5 Adult 2 Room</option>
+                                <option value="ooh">8 Adult 2 Room</option>
+                                <option value="whoop">10 Adult 3 Room</option>
+                            </select>
+                        </div>
+                        <!--Input Field End-->
+                    </div>
+                </div>
+                <!--Input Field Start-->
+                <div class="input-field">
+                    <input class="chr-btn th-bg" type="submit" value="Check Availability">
+                </div>
+                <!--Input Field End-->
+            </form>
+        </div>
+    </div>
+    <!--Widget Booking End-->
+</div>
